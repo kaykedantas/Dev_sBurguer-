@@ -2,7 +2,7 @@
 session_start();
 include_once '../db/conexao.php';
 
-// Corrigido para usar INPUT_POST
+
 $email_login = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
 $senha_login = filter_input(INPUT_POST, "senha", FILTER_SANITIZE_STRING);
 
